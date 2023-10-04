@@ -8,9 +8,27 @@
     src: url(/assets/font/Roboto/Roboto-Regular.ttf) format('truetype');
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 ul {
+    display: flex;
     list-style: none;
     color: white;
+    align-items: center;
+    margin-right: 8%;
+}
+
+li {
+    padding: 10%;
+    white-space: nowrap;
+}
+
+li:hover {
+    background-color: rgb(92, 81, 81);
+    text-decoration: underline;
 }
 
 header {
@@ -30,30 +48,8 @@ header {
     margin-right: 10%;
 }
 
-/* #navcity{ 
-    width: 100%;
-    margin-top: 5%;
-} Test gérer les 3 indépendamment */
-
-#navcity1{ 
-    width: 100%;
-    margin-top: 5%;
-}
-
-#navcity2{ 
-    width: 100%;
-    margin-top: 5%;
-}
-
-#navcity3{ 
-    width: 100%;
-    margin-top: 5%;
-}
-
-
 .cities {
     display: flex;
-    justify-content:center;
     align-items: center;
     position: relative;
     margin-top: 20px;
@@ -182,3 +178,4 @@ header {
 .button_ny:hover {
     background-color: rgb(145, 145, 238);
 }
+
