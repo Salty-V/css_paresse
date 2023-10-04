@@ -3,40 +3,63 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assets/font/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+ul {
+    list-style: none;
+    color: white;
+}
+
 header {
     width: 100%;
     height: 50px;
     position:relative;
     background-color: grey;
     color: white;
+    font-family: 'Roboto';
+    text-align:right;
 }
 
 .fixed_bar {
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: center;
     margin-right: 10%;
 }
 
-.flex_1 { 
-margin:1%;
+/* #navcity{ 
+    width: 100%;
+    margin-top: 5%;
+} Test gérer les 3 indépendamment */
+
+#navcity1{ 
+    width: 100%;
+    margin-top: 5%;
 }
 
-.flex_2 { 
-    margin: 1%;
+#navcity2{ 
+    width: 100%;
+    margin-top: 5%;
 }
-.flex_3 { 
-    margin: 1%;
+
+#navcity3{ 
+    width: 100%;
+    margin-top: 5%;
 }
+
 
 .cities {
     display: flex;
     justify-content:center;
     align-items: center;
-    position: absolute;
+    position: relative;
     margin-top: 20px;
     margin-left: 10%;
     width: 80%;
+    font-family: 'Roboto';
 }
 
 .cities h2 {
@@ -83,7 +106,7 @@ margin:1%;
 }
 
 .img_paris {
-    background-image: url(/images/paris.jpg);
+    background-image: url(/assets/images/paris.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -91,7 +114,7 @@ margin:1%;
 }
 
 .img_tokyo {
-    background-image: url(images/tokyo.jpg);
+    background-image: url(/assets/images/tokyo.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -99,7 +122,7 @@ margin:1%;
 }
 
 .img_ny {
-    background-image: url(images/new-york.jpeg);
+    background-image: url(/assets/images/new-york.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -110,12 +133,18 @@ margin:1%;
     background-color: blueviolet;
     border: none;
     color: white;
-    position: absolute;
+    position:absolute;
     text-align: center;
     cursor: pointer;
     width: 100px;
     height: 35px;
     margin-left: calc(50% - 50px);
+    bottom: 2%;
+    transition: background-color 0,5s ease;
+}
+
+.button_paris:hover {
+    background-color: rgb(157, 129, 183);
 }
 
 .button_tokyo {
@@ -128,6 +157,12 @@ margin:1%;
     width: 100px;
     height: 35px;
     margin-left: calc(50% - 50px);
+    bottom: 2%;
+    transition: background-color 0,5s ease;
+}
+
+.button_tokyo:hover {
+    background-color:rgb(245, 147, 111);
 }
 
 .button_ny {
@@ -140,4 +175,10 @@ margin:1%;
     width: 120px;
     height: 35px;
     margin-left: calc(50% - 50px);
+    bottom: 2%;
+    transition: background-color 0,5s ease;
+}
+
+.button_ny:hover {
+    background-color: rgb(145, 145, 238);
 }
