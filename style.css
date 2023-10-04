@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    position:relative;
+    background-color: grey;
+    color: white;
+}
+
+.fixed_bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.flex_1 { 
+margin:1%;
+}
+
+.flex_2 { 
+    margin: 1%;
+}
+.flex_3 { 
+    margin: 1%;
+}
+
+.cities {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.cities h2 {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.cities p {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.paris {
+    flex-grow: 1;
+    width: 400px;
+    height: 500px;
+    margin: 7px;
+    position: relative;
+    text-align: center;
+    box-shadow: 10px 5px 5px grey;
+    text-align: left;
+}
+
+.tokyo {
+    flex-grow: 2;
+    width: 400px;
+    height: 500px;
+    margin: 7px;
+    position: relative;
+    text-align: center;
+    box-shadow: 10px 5px 5px grey;
+    text-align: left;
+}
+
+.new_york {
+    flex-grow: 3;
+    width: 400px;
+    height: 500px;
+    margin: 7px;
+    position: relative;
+    text-align: center;
+    box-shadow: 10px 5px 5px grey;
+    text-align: left;
+}
+
+.img_paris {
+    background-image: url(/images/paris.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+
+.img_tokyo {
+    background-image: url(images/tokyo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+
+.img_ny {
+    background-image: url(images/new-york.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+}
+
+.button_paris {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    margin-left: calc(50% - 50px);
+}
+
+.button_tokyo {
+    background-color:orangered;
+    border: none;
+    color: white;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+    margin-left: calc(50% - 50px);
+}
+
+.button_ny {
+    background-color: blue;
+    color: white;
+    border: none;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    margin-left: calc(50% - 50px);
+}
